@@ -7,7 +7,7 @@ class MegaArrayTest {
     final int LENGTH = 50;
 
     @Test
-    void megaArrayTest() {
+    void test() {
         Random random = new Random();
         int[] values = new int[LENGTH];
         for (int i = 0; i < LENGTH; i++) {

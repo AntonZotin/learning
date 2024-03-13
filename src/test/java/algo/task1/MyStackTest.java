@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 class MyStackTest {
 
     @Test
-    void stackTest() {
+    void test() {
         MyStack stack = new MyStack(3);
 
         Assertions.assertThrows(IllegalStateException.class, stack::pop);

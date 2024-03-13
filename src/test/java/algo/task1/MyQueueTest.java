@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 class MyQueueTest {
 
     @Test
-    void queueTest() {
+    void test() {
         MyQueue queue = new MyQueue(3);
 
         Assertions.assertThrows(IllegalStateException.class, queue::dequeue);
