@@ -1,4 +1,4 @@
-package algo.task2;
+package theme1algo.task2;
 
 import java.util.Arrays;
 import java.util.logging.Logger;

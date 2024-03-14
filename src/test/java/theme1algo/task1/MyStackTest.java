@@ -1,4 +1,4 @@
-package algo.task1;
+package theme1algo.task1;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

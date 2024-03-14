@@ -1,4 +1,4 @@
-package algo.task3;
+package theme1algo.task3;
 
 import java.util.Random;
 import org.junit.jupiter.api.Test;

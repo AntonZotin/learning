@@ -1,4 +1,4 @@
-package algo.task3;
+package theme1algo.task3;
 
 public class BinarySearchTree {
     private Node rootNode = null;
