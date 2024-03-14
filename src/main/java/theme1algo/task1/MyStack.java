@@ -2,9 +2,9 @@ package theme1algo.task1;
 
 import java.util.Arrays;
 import java.util.logging.Logger;
+import logger.AbstractLogger;
 
-public class MyStack {
-    private final Logger logger = Logger.getLogger(MyStack.class.getName());
+public class MyStack extends AbstractLogger {
     private final int[] stackArray;
     private int top = -1;
     private final int length;
@@ -18,7 +18,7 @@ public class MyStack {
         if (isFull()) {
             throw new IllegalStateException("Stack is full");
         } else {
-            logger.info("Inserting " + value);
+            LOGGER.info("Inserting " + value);
             stackArray[++top] = value;
         }
     }
@@ -27,7 +27,7 @@ public class MyStack {
         if (isEmpty()) {
             throw new IllegalStateException("Stack is empty");
         } else {
-            logger.info("Removing " + peek());
+            LOGGER.info("Removing " + peek());
             return stackArray[top--];
         }
     }
@@ -41,7 +41,7 @@ public class MyStack {
     }
 
     public void print() {
-        logger.info(Arrays.toString(stackArray));
+        LOGGER.info(Arrays.toString(stackArray));
     }
 
     private boolean isEmpty() {
