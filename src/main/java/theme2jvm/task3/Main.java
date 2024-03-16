@@ -6,7 +6,7 @@ import logger.AbstractLogger;
 
 public class Main extends AbstractLogger {
 
-    public static void main(String[] args) throws ClassNotFoundException {
+    public static void main(String[] args) {
         LOGGER.info("CustomEnum must have 4 fields: EPIC, HARD, EASY and MIDDLE");
         CustomClassLoader loader = new CustomClassLoader();
         Class customEnum = loader.findClass("theme2jvm.task3.CustomEnum");

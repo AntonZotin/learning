@@ -6,7 +6,7 @@ import logger.AbstractLogger;
 public class MegaArray extends AbstractLogger {
     private final int[] array;
 
-    public MegaArray(int[] values) {
+    MegaArray(int[] values) {
         array = values;
     }
 
