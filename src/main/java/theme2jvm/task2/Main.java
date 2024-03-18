@@ -1,14 +1,13 @@
 package theme2jvm.task2;
 
 import java.util.Arrays;
-import logger.AbstractLogger;
 
 /**
  * Before execute program edit Intellij run configuration:
  * Modify options -> Add VM options
  * Add option -XX:+PrintGCDetails
  */
-public class Main extends AbstractLogger {
+public class Main {
     static Runtime runtime = Runtime.getRuntime();
 
     public static void main(String[] args) throws InterruptedException {
@@ -23,14 +22,14 @@ public class Main extends AbstractLogger {
                     bigArray[i] = arr;
                 }
                 System.gc();
-                LOGGER.info("Filled");
+                System.out.println("Filled");
                 print();
             } else {
                 for (int i = 0; i < bigArray.length; i++) {
                     bigArray[i] = null;
                 }
                 System.gc();
-                LOGGER.info("Unfilled");
+                System.out.println("Unfilled");
                 print();
             }
             Thread.sleep(5000);
@@ -38,8 +37,8 @@ public class Main extends AbstractLogger {
     }
 
     static void print() {
-        LOGGER.info("Total " + runtime.totalMemory());
-        LOGGER.info("Max " + runtime.maxMemory());
-        LOGGER.info("Free " + runtime.freeMemory());
+        System.out.println("Total " + runtime.totalMemory());
+        System.out.println("Max " + runtime.maxMemory());
+        System.out.println("Free " + runtime.freeMemory());
     }
 }

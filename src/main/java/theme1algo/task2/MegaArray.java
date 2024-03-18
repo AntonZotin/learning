@@ -1,9 +1,8 @@
 package theme1algo.task2;
 
 import java.util.Arrays;
-import logger.AbstractLogger;
 
-public class MegaArray extends AbstractLogger {
+public class MegaArray {
     private final int[] array;
 
     MegaArray(int[] values) {
@@ -65,6 +64,6 @@ public class MegaArray extends AbstractLogger {
     }
 
     public void print() {
-        LOGGER.info(Arrays.toString(array));
+        System.out.println(Arrays.toString(array));
     }
 }

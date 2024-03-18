@@ -2,13 +2,12 @@ package theme4collecions.task2;
 
 import java.time.Duration;
 import java.time.Instant;
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.TreeMap;
 
 /**
- * HashMap: Время поиска элементов, мс: 75
- * TreeMap: Время поиска элементов, мс: 161
+ * HashMap: Время поиска элементов, мс: 182
+ * TreeMap: Время поиска элементов, мс: 435
  */
 
 public class Main {

@@ -1,9 +1,8 @@
 package theme2jvm.task1;
 
 import java.util.Arrays;
-import logger.AbstractLogger;
 
-public class Main extends AbstractLogger {
+public class Main {
     static Runtime runtime = Runtime.getRuntime();
 
     public static void main(String[] args) throws InterruptedException {
@@ -17,13 +16,13 @@ public class Main extends AbstractLogger {
                     Arrays.fill(arr, 120);
                     bigArray[i] = arr;
                 }
-                LOGGER.info("Filled");
+                System.out.println("Filled");
                 print();
             } else {
                 for (int i = 0; i < bigArray.length; i++) {
                     bigArray[i] = null;
                 }
-                LOGGER.info("Unfilled");
+                System.out.println("Unfilled");
                 print();
             }
             Thread.sleep(5000);
@@ -31,8 +30,8 @@ public class Main extends AbstractLogger {
     }
 
     static void print() {
-        LOGGER.info("Total " + runtime.totalMemory());
-        LOGGER.info("Max " + runtime.maxMemory());
-        LOGGER.info("Free " + runtime.freeMemory());
+        System.out.println("Total " + runtime.totalMemory());
+        System.out.println("Max " + runtime.maxMemory());
+        System.out.println("Free " + runtime.freeMemory());
     }
 }

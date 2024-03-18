@@ -1,12 +1,16 @@
-package theme4collecions.task3;
+package theme4collections.task3;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
+import org.junit.jupiter.api.Test;
+import theme4collecions.task3.Person;
+import theme4collecions.task3.PersonComparator;
 
-public class Main {
-    public static void main(String[] args) {
+class PersonTest {
+
+    @Test
+    void test() {
         List<Person> list = new ArrayList<>();
         list.add(new Person("Андрей", 10));
         list.add(new Person("Иван", 90));

@@ -1,9 +1,8 @@
 package theme1algo.task1;
 
 import java.util.Arrays;
-import logger.AbstractLogger;
 
-public class MyQueue extends AbstractLogger {
+public class MyQueue {
     private final int[] queueArray;
     private int front = 0;
     private int tail = -1;
@@ -19,7 +18,7 @@ public class MyQueue extends AbstractLogger {
         if (isFull()) {
             throw new IllegalStateException("Queue is full");
         } else {
-            LOGGER.info("Inserting " + value);
+            System.out.println("Inserting " + value);
             tail = (tail + 1) % maxSize;
             queueArray[tail] = value;
             count++;
@@ -31,7 +30,7 @@ public class MyQueue extends AbstractLogger {
             throw new IllegalStateException("Queue is empty");
         } else {
             int item = queueArray[front];
-            LOGGER.info("Removing " + item);
+            System.out.println("Removing " + item);
             front = (front + 1) % maxSize;
             count--;
             return item;
@@ -47,7 +46,7 @@ public class MyQueue extends AbstractLogger {
     }
 
     public void print() {
-        LOGGER.info(Arrays.toString(queueArray));
+        System.out.println(Arrays.toString(queueArray));
     }
 
     private boolean isEmpty() {

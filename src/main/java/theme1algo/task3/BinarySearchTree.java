@@ -1,8 +1,6 @@
 package theme1algo.task3;
 
-import logger.AbstractLogger;
-
-public class BinarySearchTree extends AbstractLogger {
+public class BinarySearchTree {
     private Node rootNode = null;
 
     public void insert(int value) {
@@ -51,13 +49,13 @@ public class BinarySearchTree extends AbstractLogger {
 
     public void inOrderTraversal() {
         inOrderRecursive(rootNode);
-        LOGGER.info("");
+        System.out.println("");
     }
 
     private void inOrderRecursive(Node node) {
         if (node != null) {
             inOrderRecursive(node.left);
-            LOGGER.info(node.value + " ");
+            System.out.print(node.value + " ");
             inOrderRecursive(node.right);
         }
     }
