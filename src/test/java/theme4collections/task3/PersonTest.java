@@ -18,9 +18,11 @@ class PersonTest {
         list.add(new Person("Виктор", 21));
         list.add(new Person("Макар", 44));
         list.add(new Person("Семён", 25));
+        list.add(new Person("Вол", 23));
         list.add(new Person("Воланд", 18));
         list.add(new Person("Прасковья", 78));
         list.add(new Person("Лумумба", 66));
+        list.add(new Person("Луму", 64));
 
         for (Person p: list) {
             System.out.println(p);
