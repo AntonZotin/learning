@@ -4,12 +4,12 @@ public class User {
     private long id = 0;
     private String name;
     private String surname;
-    private int birthDay;
+    private String password;
 
-    public User(String name, String surname, int birthDay) {
+    public User(String name, String surname, String password) {
         this.name = name;
         this.surname = surname;
-        this.birthDay = birthDay;
+        this.password = password;
     }
 
     public long getId() {
@@ -36,12 +36,12 @@ public class User {
         this.surname = surname;
     }
 
-    public int getBirthDay() {
-        return birthDay;
+    public String getPassword() {
+        return password;
     }
 
-    public void setBirthDay(int birthDay) {
-        this.birthDay = birthDay;
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     @Override
@@ -50,7 +50,7 @@ public class User {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
-                ", birthDay=" + birthDay +
+                ", password='" + password + '\'' +
                 '}';
     }
 }
