@@ -1,4 +1,4 @@
-package theme6threads.task3;
+package theme7threads.task3;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

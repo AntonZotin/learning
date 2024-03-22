@@ -1,4 +1,4 @@
-package theme6threads.task2;
+package theme7threads.task2;
 
 import java.util.concurrent.atomic.AtomicInteger;
 

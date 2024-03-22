@@ -1,4 +1,4 @@
-package theme5gc.task1;
+package theme6gc.task1;
 
 import java.util.LinkedList;
 

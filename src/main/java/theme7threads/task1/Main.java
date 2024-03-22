@@ -1,4 +1,4 @@
-package theme6threads.task1;
+package theme7threads.task1;
 
 public class Main {
     static int elements = 5;
