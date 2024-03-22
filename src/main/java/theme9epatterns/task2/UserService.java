@@ -1,6 +1,8 @@
 package theme9epatterns.task2;
 
+import theme9epatterns.task3.UserDto;
+
 public interface UserService {
-    void registration(String name, String surname, String password);
-    void authorization(String name, String password);
+    void registration(UserDto userDTO);
+    void authorization(UserDto userDTO);
 }

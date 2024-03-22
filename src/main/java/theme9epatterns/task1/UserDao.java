@@ -1,6 +1,6 @@
 package theme9epatterns.task1;
 
-public interface UserDAO {
+public interface UserDao {
     long create(User user);
     boolean update(long id, User user);
     boolean delete(long id);

@@ -7,7 +7,7 @@ class UserTest {
 
     @Test
     void test() {
-        UserDAO dao = new UserDAOImpl();
+        UserDao dao = new UserDaoImpl();
         dao.create(new User("Prohor", "Shalyapin", "pass"));
         dao.create(new User("Andrey", "Smetanov", "sapp"));
         dao.create(new User("George", "Van Pussen", "pes"));

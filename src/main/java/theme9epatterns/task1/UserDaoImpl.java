@@ -2,7 +2,7 @@ package theme9epatterns.task1;
 
 import java.util.HashMap;
 
-public class UserDAOImpl implements UserDAO {
+public class UserDaoImpl implements UserDao {
     Long counter = 0L;
     HashMap<Long, User> users = new HashMap<>();
 
